@@ -7,7 +7,7 @@ import * as vscode from "vscode";
 
 Mocha.suite("ext", () => {
   Mocha.test("ext_exists", () => {
-    const ext = vscode.extensions.getExtension("move.move-analyzer");
+    const ext = vscode.extensions.getExtension("movingco.move-analyzer-plus");
     assert.ok(ext);
   });
 });

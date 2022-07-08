@@ -6,7 +6,7 @@
 **/*
 !LICENSE.txt
 !images/move.png
-!out/src/*
+!dist/*
 !node_modules/**/*
 !language-configuration.json
 !move.tmLanguage.json

@@ -5,5 +5,5 @@
     "rootDir": "."
   },
   "exclude": [".vscode-test"],
-  "include": ["src", "tests", "types", ".eslintrc.cjs"]
+  "include": ["src", "tests", "types", ".eslintrc.cjs", "esbuild.mjs"]
 }

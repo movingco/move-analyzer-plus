@@ -2,12 +2,11 @@
   "name": "move-analyzer-plus",
   "displayName": "Move Analyzer+",
   "description": "A language server and basic grammar for the Move programming language.",
-  "publisher": "move",
+  "publisher": "movingco",
   "icon": "images/move.png",
   "license": "Apache-2.0",
   "version": "0.0.8",
   "preview": true,
-  "type": "module",
   "homepage": "https://github.com/move-language/move",
   "repository": {
     "url": "https://github.com/move-language/move.git",
@@ -25,7 +24,7 @@
   "keywords": [
     "move"
   ],
-  "main": "./out/src/main.js",
+  "main": "./dist/main.js",
   "activationEvents": [
     "onLanguage:move"
   ],
@@ -92,7 +91,7 @@
     "lint:fix": "eslint . --cache --fix",
     "pretest": "npm run compile && npm run lint",
     "test": "node ./out/tests/runTests.js",
-    "vscode:prepublish": "npm run pretest",
+    "vscode:prepublish": "tsc && node esbuild.mjs",
     "package": "vsce package -o move-analyzer-plus.vsix --no-yarn --no-dependencies",
     "prepare": "husky install",
     "publish": "npm run pretest && npm run test && vsce publish"
@@ -116,6 +115,8 @@
     "@types/vscode": "~1.58",
     "@typescript-eslint/utils": "^5.30.5",
     "@vscode/test-electron": "^1.6.2",
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.11",
+    "esbuild": "^0.14.48",
     "eslint": "^8.19.0",
     "eslint-plugin-tsdoc": "^0.2.16",
     "glob": "^8.0.3",
@@ -125,6 +126,7 @@
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
     "vsce": "^2.9.2",
+    "vscode": "^1.1.37",
     "vscode-test": "^1.6.1"
   },
   "lint-staged": {

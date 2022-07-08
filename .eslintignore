@@ -2,6 +2,7 @@
 node_modules
 # eslint lints our pre-compiled source files; it does not need to lint
 # build output.
+dist
 out
 # Do not lint TypeScript type declarations.
 *.d.ts
