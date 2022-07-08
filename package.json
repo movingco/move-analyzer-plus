@@ -1,19 +1,19 @@
 {
   "name": "move-analyzer-plus",
   "displayName": "Move Analyzer+",
-  "description": "A language server and basic grammar for the Move programming language.",
+  "description": "An enhanced language server and basic grammar for the Move programming language.",
   "publisher": "movingco",
   "icon": "images/move.png",
   "license": "Apache-2.0",
   "version": "0.0.8",
   "preview": true,
-  "homepage": "https://github.com/move-language/move",
+  "homepage": "https://github.com/movingco/move-analyzer-plus",
   "repository": {
-    "url": "https://github.com/move-language/move.git",
+    "url": "https://github.com/movingco/move-analyzer-plus.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/move-language/move/issues"
+    "url": "https://github.com/movingco/move-analyzer-plus/issues"
   },
   "engines": {
     "vscode": "^1.59.0"
