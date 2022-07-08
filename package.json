@@ -32,7 +32,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "move-analyzer.serverVersion",
+        "command": "move-analyzer-plus.serverVersion",
         "title": "Show Server Version",
         "category": "Move Analyzer"
       }
@@ -41,12 +41,12 @@
       "type": "object",
       "title": "Move Analyzer",
       "properties": {
-        "move-analyzer.server.path": {
+        "move-analyzer-plus.server.path": {
           "type": "string",
           "default": "move-analyzer",
           "markdownDescription": "Path and filename of the move-analyzer executable, e.g. `/usr/bin/move-analyzer`."
         },
-        "move-analyzer.trace.server": {
+        "move-analyzer-plus.trace.server": {
           "type": "string",
           "scope": "window",
           "enum": [
@@ -80,7 +80,7 @@
     "menus": {
       "commandPalette": [
         {
-          "command": "move-analyzer.serverVersion"
+          "command": "move-analyzer-plus.serverVersion"
         }
       ]
     }
@@ -126,12 +126,6 @@
     "typescript": "^4.7.4",
     "vsce": "^2.9.2",
     "vscode-test": "^1.6.1"
-  },
-  "__metadata": {
-    "id": "71e74fc8-23c2-47b7-8594-ed00192d96a6",
-    "publisherDisplayName": "move",
-    "publisherId": "40d7def1-c662-4965-9ead-c06109c7cc6d",
-    "isPreReleaseVersion": false
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --cache --fix",
