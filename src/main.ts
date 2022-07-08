@@ -62,6 +62,9 @@ export function activate(extensionContext: Readonly<vscode.ExtensionContext>): v
     // Register handlers for VS Code commands that the user explicitly issues.
     context.registerCommand('serverVersion', serverVersion);
 
+    // Adds better commenting.
+    context.configureLanguage();
+
     // All other utilities provided by this extension occur via the language server.
     context.startClient();
 }
