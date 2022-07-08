@@ -94,7 +94,7 @@
     "vscode:prepublish": "tsc && node esbuild.mjs",
     "package": "vsce package -o move-analyzer-plus.vsix --no-yarn --no-dependencies",
     "prepare": "husky install",
-    "publish": "npm run pretest && npm run test && vsce publish"
+    "publish": "npm run pretest && npm run test && vsce publish  --no-yarn --no-dependencies"
   },
   "extensionDependencies": [
     "damirka.move-syntax"
