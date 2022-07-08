@@ -94,6 +94,7 @@
     "test": "node ./out/tests/runTests.js",
     "vscode:prepublish": "npm run pretest",
     "package": "vsce package -o move-analyzer-plus.vsix --no-yarn --no-dependencies",
+    "prepare": "husky install",
     "publish": "npm run pretest && npm run test && vsce publish"
   },
   "extensionDependencies": [
@@ -118,6 +119,7 @@
     "eslint": "^8.19.0",
     "eslint-plugin-tsdoc": "^0.2.16",
     "glob": "^8.0.3",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "mocha": "^10.0.0",
     "prettier": "^2.7.1",
