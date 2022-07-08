@@ -59,7 +59,7 @@ bottom-right of your Visual Studio Code screen when opening a Move file, it mean
 2. If you installed the `move-analyzer` executable to a different location that is outside of your
    `PATH`, then you may have the extension look at this location by using the the Visual Studio Code
    settings (`⌘,` on macOS, or use the menu item _Code > Preferences > Settings_). Search for the
-   `move-analyzer.server.path` setting, and set it to the location of the `move-analyzer` language
+   `move-analyzer-plus.server.path` setting, and set it to the location of the `move-analyzer` language
    server you installed.
 3. If the above steps don't work, then report
    [a GitHub issue to the Move repository](https://github.com/move-language/move/issues) to get help.

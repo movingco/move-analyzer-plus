@@ -49,7 +49,7 @@ export class Context {
     command: (context: Readonly<Context>) => Promise<void>
   ): void {
     const disposable = vscode.commands.registerCommand(
-      `move-analyzer.${name}`,
+      `move-analyzer-plus.${name}`,
       async () => {
         const com = await command(this);
         return com;
@@ -92,7 +92,7 @@ export class Context {
    *
    * The "client" is an object that sends messages to the language server, which in Move's case is
    * the `move-analyzer` executable. Unlike registered extension commands such as
-   * `move-analyzer.serverVersion`, which are manually executed by a VS Code user via the command
+   * `move-analyzer-plus.serverVersion`, which are manually executed by a VS Code user via the command
    * palette or menu, this client sends many of its messages on its own (for example, when it
    * starts, it sends the "initialize" request).
    *
