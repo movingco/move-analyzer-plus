@@ -1,6 +1,6 @@
 {
-  "name": "move-analyzer",
-  "displayName": "move-analyzer",
+  "name": "move-analyzer-plus",
+  "displayName": "Move Analyzer+",
   "description": "A language server and basic grammar for the Move programming language.",
   "publisher": "move",
   "icon": "images/move.png",
@@ -17,7 +17,7 @@
     "url": "https://github.com/move-language/move/issues"
   },
   "engines": {
-    "vscode": "^1.58.2"
+    "vscode": "1.59.0"
   },
   "categories": [
     "Programming Languages"
@@ -93,7 +93,7 @@
     "pretest": "npm run compile && npm run lint",
     "test": "node ./out/tests/runTests.js",
     "vscode:prepublish": "npm run pretest",
-    "package": "vsce package -o move-analyzer.vsix",
+    "package": "vsce package -o move-analyzer-plus.vsix --no-yarn --no-dependencies",
     "publish": "npm run pretest && npm run test && vsce publish"
   },
   "extensionDependencies": [
@@ -102,27 +102,26 @@
   "dependencies": {
     "command-exists": "^1.2.9",
     "tslib": "^2.4.0",
-    "vscode-languageclient": "6.1.4"
+    "vscode-languageclient": "^8.0.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
     "@saberhq/eslint-config": "^2.0.1",
     "@saberhq/tsconfig": "^2.0.1",
     "@types/command-exists": "^1.2.0",
-    "@types/glob": "^7.1.4",
-    "@types/mocha": "^9.0.0",
-    "@types/node": "^14.17.22",
-    "@types/vscode": "^1.58.2",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "@vscode/test-electron": "^1.6.1",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^14.18.21",
+    "@types/vscode": "~1.58",
+    "@typescript-eslint/utils": "^5.30.5",
+    "@vscode/test-electron": "^1.6.2",
     "eslint": "^8.19.0",
-    "eslint-plugin-tsdoc": "^0.2.14",
-    "glob": "^7.1.7",
+    "eslint-plugin-tsdoc": "^0.2.16",
+    "glob": "^8.0.3",
     "lint-staged": "^13.0.3",
-    "mocha": "^9.1.1",
+    "mocha": "^10.0.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.4.4",
+    "typescript": "^4.7.4",
     "typescript-formatter": "^7.2.2",
     "vsce": "^2.9.2",
     "vscode-test": "^1.6.1"

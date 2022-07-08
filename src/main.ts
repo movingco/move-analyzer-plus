@@ -5,10 +5,10 @@
 import * as childProcess from "child_process";
 import * as vscode from "vscode";
 
-import { Configuration } from "./configuration";
-import { Context } from "./context";
-import { Extension } from "./extension";
-import { log } from "./log";
+import { Configuration } from "./configuration.js";
+import { Context } from "./context.js";
+import { Extension } from "./extension.js";
+import { log } from "./log.js";
 
 /**
  * An extension command that displays the version of the server that this extension

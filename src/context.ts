@@ -5,10 +5,15 @@
 import { sync as commandExistsSync } from "command-exists";
 import * as vscode from "vscode";
 import { IndentAction } from "vscode";
-import * as lc from "vscode-languageclient";
+import type {
+  Executable,
+  LanguageClientOptions,
+  ServerOptions,
+} from "vscode-languageclient/node.js";
+import { LanguageClient } from "vscode-languageclient/node.js";
 
-import type { Configuration } from "./configuration";
-import { log } from "./log";
+import type { Configuration } from "./configuration.js";
+import { log } from "./log.js";
 
 /** Information passed along to each VS Code command defined by this extension. */
 export class Context {
@@ -95,10 +100,10 @@ export class Context {
    * "initialize," read [the Language Server Protocol specification](https://microsoft.github.io/language-server-protocol/specifications/specification-current/#initialize).
    **/
   startClient(): void {
-    const executable: lc.Executable = {
+    const executable: Executable = {
       command: this.configuration.serverPath,
     };
-    const serverOptions: lc.ServerOptions = {
+    const serverOptions: ServerOptions = {
       run: executable,
       debug: executable,
     };
@@ -112,19 +117,18 @@ export class Context {
     const traceOutputChannel = vscode.window.createOutputChannel(
       "Move Analyzer Language Server Trace"
     );
-    const clientOptions: lc.LanguageClientOptions = {
+    const clientOptions: LanguageClientOptions = {
       documentSelector: [{ scheme: "file", language: "move" }],
       traceOutputChannel,
     };
 
-    const client = new lc.LanguageClient(
-      "move-analyzer",
-      "Move Language Server",
+    const client = new LanguageClient(
+      "move-analyzer-plus",
+      "Move Analyzer+ Language Server",
       serverOptions,
       clientOptions
     );
     log.info("Starting client...");
-    const disposable = client.start();
-    this._extensionContext.subscriptions.push(disposable);
+    void client.start();
   }
 }
