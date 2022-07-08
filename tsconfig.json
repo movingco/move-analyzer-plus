@@ -1,5 +1,5 @@
 {
-  "extends": "@saberhq/tsconfig/tsconfig.module.json",
+  "extends": "@saberhq/tsconfig/tsconfig.cjs.json",
   "compilerOptions": {
     "outDir": "out",
     "rootDir": "."
