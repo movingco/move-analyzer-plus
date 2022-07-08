@@ -9,8 +9,8 @@
  * https://code.visualstudio.com/api/working-with-extensions/testing-extension#the-test-script
  */
 
-import * as path from 'path';
-import { runTests } from '@vscode/test-electron';
+import { runTests } from "@vscode/test-electron";
+import * as path from "path";
 
 /**
  * Launches a VS Code instance to run tests.
@@ -19,21 +19,21 @@ import { runTests } from '@vscode/test-electron';
  * target defined in this repository's `.vscode/launch.json`.
  */
 async function main(): Promise<void> {
-    try {
-        // The `--extensionDevelopmentPath` argument passed to VS Code. This should point to the
-        // directory that contains the extension manifest file, `package.json`.
-        const extensionDevelopmentPath = path.resolve(__dirname, '..', '..');
+  try {
+    // The `--extensionDevelopmentPath` argument passed to VS Code. This should point to the
+    // directory that contains the extension manifest file, `package.json`.
+    const extensionDevelopmentPath = path.resolve(__dirname, "..", "..");
 
-        // The `--extensionTestsPath` argument passed to VS Code. This should point to a JavaScript
-        // program that is considered to be the "test suite" for the extension.
-        const extensionTestsPath = path.resolve(__dirname, 'index.js');
+    // The `--extensionTestsPath` argument passed to VS Code. This should point to a JavaScript
+    // program that is considered to be the "test suite" for the extension.
+    const extensionTestsPath = path.resolve(__dirname, "index.js");
 
-        // Download VS Code, unzip it, and run the "test suite" program.
-        await runTests({ extensionDevelopmentPath, extensionTestsPath });
-    } catch (_err: unknown) {
-        console.error('Failed to run tests');
-        process.exit(1);
-    }
+    // Download VS Code, unzip it, and run the "test suite" program.
+    await runTests({ extensionDevelopmentPath, extensionTestsPath });
+  } catch (_err: unknown) {
+    console.error("Failed to run tests");
+    process.exit(1);
+  }
 }
 
 void main();
