@@ -1,4 +1,4 @@
-# move-analyzer
+# Move Analyzer Plus
 
 Provides language support for the Move programming language.
 
