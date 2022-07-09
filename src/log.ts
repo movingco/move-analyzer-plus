@@ -6,7 +6,7 @@ import * as vscode from "vscode";
 
 class ExtensionLogger {
   private readonly _output = vscode.window.createOutputChannel(
-    "Move Analyzer Client"
+    "Move Analyzer+ Client"
   );
 
   /** Log an informational message (as opposed to an error or a warning). */

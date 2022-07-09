@@ -5,28 +5,28 @@
 // For more information, visit:
 // https://code.visualstudio.com/api/language-extensions/language-configuration-guide
 {
-    "autoClosingPairs": [
-        { "open": "{", "close": "}" },
-        { "open": "[", "close": "]" },
-        { "open": "(", "close": ")" },
-        { "open": "\"", "close": "\"", "notIn": ["string", "comment"] },
-        { "open": "/*", "close": "*/", "notIn": ["string"] }
-    ],
-    "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["<", ">"],
-    ],
-    "comments": {
-        "lineComment": "//",
-        "blockComment": ["/*", "*/"]
-    },
-    "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["<", ">"],
-        ["\"", "\""]
-    ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"", "notIn": ["string", "comment"] },
+    { "open": "/*", "close": "*/", "notIn": ["string"] }
+  ],
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["<", ">"]
+  ],
+  "comments": {
+    "lineComment": "//",
+    "blockComment": ["/*", "*/"]
+  },
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["<", ">"],
+    ["\"", "\""]
+  ]
 }
