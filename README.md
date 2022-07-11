@@ -2,7 +2,7 @@
 
 Provides language support for the Move programming language.
 
-Install on the VSCode Extension Marketplace: [![Move Analyzer on the VSCode Marketplace](/visual-studio-marketplace/v/movingco.move-analyzer-plus)](https://marketplace.visualstudio.com/items?itemName=movingco.move-analyzer-plus])
+Install on the VSCode Extension Marketplace: [Move Analyzer Plus on the VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=movingco.move-analyzer-plus)
 
 Currently, this means a basic grammar and language configuration for Move (`.move`) that enables
 syntax highlighting, commenting/uncommenting, simple context-unaware completion suggestions while
