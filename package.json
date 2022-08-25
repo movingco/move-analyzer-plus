@@ -67,13 +67,19 @@
       {
         "id": "move",
         "aliases": [
-          "Move",
-          "move"
+          "Move"
         ],
         "extensions": [
           ".move"
         ],
         "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "move",
+        "scopeName": "source.move",
+        "path": "./syntaxes/move.tmLanguage.json"
       }
     ],
     "menus": {
@@ -133,5 +139,5 @@
     "*.{ts,tsx}": "eslint --cache --fix",
     "*.{md,js,json,yml,yaml,css,md}": "prettier --write"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.3"
 }
