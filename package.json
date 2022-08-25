@@ -1,6 +1,6 @@
 {
   "name": "move-analyzer-plus",
-  "displayName": "Move Analyzer+",
+  "displayName": "Move Analyzer Plus by Saber",
   "description": "An enhanced language server and basic grammar for the Move programming language.",
   "publisher": "movingco",
   "icon": "images/move.png",
@@ -108,22 +108,22 @@
   "dependencies": {
     "command-exists": "^1.2.9",
     "tslib": "^2.4.0",
-    "vscode-languageclient": "^8.0.1"
+    "vscode-languageclient": "^8.0.2"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
-    "@saberhq/eslint-config": "^2.0.1",
-    "@saberhq/tsconfig": "^2.0.1",
+    "@saberhq/eslint-config": "^2.0.4",
+    "@saberhq/tsconfig": "^2.0.4",
     "@types/command-exists": "^1.2.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^14.18.21",
+    "@types/node": "^14.18.26",
     "@types/vscode": "~1.58",
-    "@typescript-eslint/utils": "^5.30.5",
+    "@typescript-eslint/utils": "^5.35.1",
     "@vscode/test-electron": "^1.6.2",
-    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.11",
-    "esbuild": "^0.14.48",
-    "eslint": "^8.19.0",
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
+    "esbuild": "^0.15.5",
+    "eslint": "^8.22.0",
     "eslint-plugin-tsdoc": "^0.2.16",
     "glob": "^8.0.3",
     "husky": "^8.0.1",
@@ -131,7 +131,7 @@
     "mocha": "^10.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
-    "vsce": "^2.9.2",
+    "vsce": "^2.10.2",
     "vscode": "^1.1.37",
     "vscode-test": "^1.6.1"
   },
