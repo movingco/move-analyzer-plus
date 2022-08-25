@@ -75,13 +75,6 @@
         "configuration": "./language-configuration.json"
       }
     ],
-    "grammars": [
-      {
-        "language": "move",
-        "scopeName": "source.move",
-        "path": "./syntaxes/move.tmLanguage.json"
-      }
-    ],
     "menus": {
       "commandPalette": [
         {
